@@ -1,0 +1,25 @@
+/// <reference types="react" />
+import React from 'react';
+import { TabBarProps, TabBarItemProps } from './PropsType';
+export declare class Item extends React.Component<TabBarItemProps, any> {
+    static defaultProps: TabBarItemProps;
+    render(): JSX.Element;
+}
+declare class AntTabBar extends React.Component<TabBarProps, any> {
+    static defaultProps: TabBarProps;
+    static Item: typeof Item;
+    getTabs: () => {
+        badge?: string | number | undefined;
+        onPress?: (() => void) | undefined;
+        selected?: boolean | undefined;
+        icon?: any;
+        selectedIcon?: any;
+        title: string;
+        dot?: boolean | undefined;
+        prefixCls?: string | undefined;
+        style?: any;
+    }[];
+    renderTabBar: () => JSX.Element;
+    render(): JSX.Element;
+}
+export default AntTabBar;
