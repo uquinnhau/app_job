@@ -7,9 +7,10 @@ import path from 'path'
 
 //ssr
 import csshook from 'css-modules-require-hook/preset' //https://github.com/css-modules/css-modules-require-hook
-import assethook from 'asset-require-hook' //https://github.com/aribouius/asset-require-hook
-assethook({
-	extensions:['png']
+import assetHook from 'asset-require-hook' //https://github.com/aribouius/asset-require-hook
+assetHook({
+    extensions: ['png'],
+    limit: 8000
 })
 
 
