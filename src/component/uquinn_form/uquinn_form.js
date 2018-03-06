@@ -1,7 +1,7 @@
 import React from 'react'
 
-
-export default function imoocForm(Comp){
+//HOC
+export default function uquinn_Form(Comp){
 	return class WrapperComp extends React.Component{
 		constructor(props){
 			super(props)

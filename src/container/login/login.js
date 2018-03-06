@@ -4,13 +4,13 @@ import {List,InputItem,WingBlank,WhiteSpace,Button} from 'antd-mobile'
 import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { login } from '../../redux/user.redux'
-import imoocFrom from '../../component/imooc-form/imooc-form.js'
+import uquinn_Form from '../../component/uquinn_form/uquinn_form.js'
 
 @connect(
 	state=>state.user,
 	{ login }
 )
-@imoocFrom
+@uquinn_Form
 class Login extends React.Component{
 	debugger
 	constructor(props) {

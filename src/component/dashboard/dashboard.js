@@ -1,13 +1,13 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {NavBar} from 'antd-mobile'
+import { connect } from 'react-redux'
+import { NavBar } from 'antd-mobile'
 import { withRouter,Route,Redirect } from 'react-router-dom'
 import NavLinkBar from '../navlink/navlink'
 import Boss from '../../component/boss/boss'
 import Genius from '../../component/genius/genius'
 import User from '../../component/user/user'
 import Msg from '../msg/msg'
-import {getMsgList,recvMsg} from '../../redux/chat.redux'
+import { getMsgList,recvMsg } from '../../redux/chat.redux'
 import QueueAnim from "rc-queue-anim"
 
 
